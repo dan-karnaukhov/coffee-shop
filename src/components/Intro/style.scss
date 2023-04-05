@@ -1,0 +1,53 @@
+@import '../../scss/variables';
+
+.intro {
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 55px 0;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 391px;
+      height: 261px;
+      content: '';
+      background-image: url('../../assets/branch.png');
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 391px;
+      height: 261px;
+      content: '';
+      background-image: url('../../assets/branch.png');
+      transform: scale(-1, 1);
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0 0 18px;
+    font-family: $secondary-font-family;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.05em;
+  }
+
+  &__text {
+    max-width: 528px;
+    margin: 0 0 30px;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../scss/variables';
+
+.product-page-description {
+  padding: 20px;
+  background-color: $background-light;
+  border-radius: 10px;
+  box-shadow: 0 5px 24px rgba(129, 135, 189, 0.15);
+
+  h4 {
+    margin: 0 0 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  p {
+    line-height: 1.5;
+    text-align: justify;
+    letter-spacing: 0.03em;
+
+    &:not(:last-child) {
+      margin: 0 0 7px;
+    }
+  }
+}

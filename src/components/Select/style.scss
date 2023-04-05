@@ -1,0 +1,63 @@
+@import '../../scss/variables';
+
+.select {
+  position: relative;
+  width: 210px;
+  padding: 10px 15px;
+  line-height: 1.2;
+  color: $text-dark;
+  cursor: pointer;
+  user-select: none;
+  background-color: $background-light;
+  border-radius: 10px;
+  box-shadow: 0 5px 24px rgba(129, 135, 189, 0.15);
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 13px;
+    height: 7px;
+    fill: $primary;
+    transition: transform 0.25s ease;
+    transform: translateY(-50%);
+
+    &_open {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+
+  &__option-list {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    padding: 9px 12px;
+    visibility: hidden;
+    background-color: $background-light;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(129, 135, 189, 0.15);
+    opacity: 0;
+    transition: all 0.25s ease;
+
+    &_open {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__option {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #f1f1f5;
+    }
+
+    &_selected {
+      background-color: #d0f0ec
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../scss/variables';
+
+.nav {
+  display: flex;
+  flex: 1 0 auto;
+  align-items: center;
+
+  &__link {
+    line-height: 1.2;
+    color: $text-dark;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-light;
+    }
+
+    &:not(:first-child) {
+      margin: 0 0 0 30px;
+    }
+
+    &:last-child {
+      margin: 0 0 0 auto;
+    }
+  }
+}

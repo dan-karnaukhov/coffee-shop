@@ -1,0 +1,22 @@
+@import '../../scss/variables';
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1.25em;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $primary;
+  background-color: $background-light;
+  border: 1px solid $primary;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+
+  &_large {
+    font-size: 18px;
+  }
+
+  &:hover {
+    color: $text-light;
+    background-color: $primary;
+  }
+}

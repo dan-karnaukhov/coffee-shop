@@ -1,0 +1,62 @@
+@import '../../scss/variables';
+
+.product-card {
+  width: 210px;
+  background-color: $background-light;
+  border-radius: 10px;
+  box-shadow: 0 5px 24px rgba(129, 135, 189, 0.15);
+
+  &__image {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 15px 15px;
+  }
+
+  &__name {
+    display: block;
+    margin: 0 0 6px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: $text-dark;
+    letter-spacing: 0.03em;
+  }
+
+  &__info {
+    display: block;
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.22;
+    color: $text-gray;
+  }
+
+  &__prices {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+  }
+
+  &__price {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+  }
+
+  &__old-price {
+    color: $text-gray;
+    text-decoration: line-through;
+  }
+
+  &__button,
+  &__counter {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+}

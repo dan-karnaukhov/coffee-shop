@@ -1,0 +1,57 @@
+@import '../../scss/variables';
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+
+  &__body {
+    display: flex;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      background-color: $background-light;
+      border: 1px solid $light-gray;
+      border-radius: 4px;
+      transition: border 0.3s ease;
+
+      &:hover {
+        border: 1px solid $primary-light;
+      }
+    }
+
+    li {
+      svg {
+        fill: #8a8a8a;
+        transition: fill 0.2s ease;
+      }
+
+      &:not(:last-child) {
+        margin: 0 8px 0 0;
+      }
+
+      &.selected {
+        color: $primary;
+
+        a {
+          border-color: $primary;
+        }
+      }
+
+      &.previous.disabled,
+      &.next.disabled {
+        pointer-events: none;
+
+        svg {
+          fill: #e0e0e0;
+        }
+      }
+    }
+  }
+}

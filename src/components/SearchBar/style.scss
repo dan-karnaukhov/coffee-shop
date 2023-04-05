@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+
+.search-bar {
+  position: relative;
+  width: 280px;
+  background-color: $background-light;
+  border-radius: 10px;
+  box-shadow: 0 5px 24px rgba(129, 135, 189, 0.15);
+
+  &__input {
+    width: 85%;
+    padding: 10px 15px;
+    font-size: inherit;
+    border-radius: 10px 0 0 10px;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    fill: $primary;
+    transform: translateY(-50%);
+  }
+}

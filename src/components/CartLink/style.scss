@@ -1,0 +1,39 @@
+@import '../../scss/variables';
+
+.cart-link {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    svg {
+      fill: $primary-light;
+    }
+  }
+
+  &__container {
+    display: flex;
+    margin: 0 15px 0 0;
+  }
+
+  &__icon {
+    fill: $text-dark;
+    transition: fill 0.3s ease;
+  }
+
+  &__badge {
+    position: relative;
+    top: -5px;
+    right: -3px;
+    align-self: flex-start;
+    padding: 0 8px;
+    color: $text-light;
+    background-color: $primary;
+    border-radius: 20px;
+  }
+
+  &__sum {
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+  }
+}

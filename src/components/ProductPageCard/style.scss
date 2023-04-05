@@ -1,0 +1,62 @@
+@import '../../scss/variables';
+
+.product-page-card {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 5px 24px rgba(129, 135, 189, 0.15);
+
+  &__image {
+    width: 325px;
+    border-radius: 10px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 325px);
+    padding: 20px 25px;
+  }
+
+  &__info {
+    margin: 9px 0 0;
+
+    div {
+      overflow: hidden;
+
+      &:not(:last-child) {
+        margin: 0 0 10px;
+      }
+
+      &::after {
+        display: block;
+        overflow: hidden;
+        letter-spacing: 0.15em;
+        white-space: nowrap;
+        content: '................................................................................';
+      }
+    }
+
+    div span:first-child {
+      float: left;
+      font-weight: 500;
+    }
+
+    div span:last-child {
+      float: right;
+    }
+  }
+
+  &__body-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: auto 0 0;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+  }
+}

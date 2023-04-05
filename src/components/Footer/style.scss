@@ -1,0 +1,17 @@
+@import '../../scss/variables';
+
+.footer {
+  background-color: $background-gray;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    font-size: 14px;
+  }
+
+  &__contacts span:first-child {
+    margin: 0 33px 0 0;
+  }
+}

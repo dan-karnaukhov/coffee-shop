@@ -1,0 +1,70 @@
+@import '../../scss/variables';
+
+.product-card-wide {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 5px 24px rgba(129, 135, 189, 0.15);
+
+  &__image {
+    width: 182px;
+    border-radius: 10px;
+  }
+
+  &__body {
+    width: 100%;
+    padding: 20px 22px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      margin: 0 0 8px;
+    }
+
+    &:last-child {
+      align-items: flex-end;
+      margin: 20px 0 0;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $text-dark;
+    letter-spacing: 0.03em;
+  }
+
+  &__price {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+  }
+
+  &__info {
+    line-height: 1.2;
+    color: $text-gray;
+  }
+
+  &__amount {
+    font-size: 18px;
+    line-height: 1.2;
+    color: $text-gray;
+  }
+
+  &__delete {
+    font-size: 14px;
+    line-height: 1.2;
+    color: $text-gray;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: rgb(232, 110, 110);
+    }
+  }
+}

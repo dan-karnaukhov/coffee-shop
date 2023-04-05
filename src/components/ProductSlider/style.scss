@@ -1,0 +1,58 @@
+.product-slider {
+  padding: 0 0 25px;
+}
+
+.slick-slider {
+  max-width: 770px;
+  margin: 21px auto 0;
+}
+
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 25px;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 5;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  background: #fff;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(129, 135, 189, 0.15);
+  transition: 0.4s ease;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-prev,
+.slick-prev:focus,
+.slick-prev:hover {
+  background: #fff url('../../assets/slider-buttons/arrow-left.svg') no-repeat
+    center;
+}
+
+.slick-next {
+  right: -40px;
+}
+
+.slick-next,
+.slick-next:focus,
+.slick-next:hover {
+  background: #fff url('../../assets/slider-buttons/arrow-right.svg') no-repeat
+    center;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+
+.slick-disabled {
+  opacity: 0;
+}

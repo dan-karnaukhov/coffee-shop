@@ -1,0 +1,25 @@
+@import '../../scss/variables';
+
+.sorter {
+  &__item {
+    font-size: 14px;
+    line-height: 1.21;
+    color: $text-gray;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+
+    &_selected {
+      font-weight: 500;
+      color: $primary;
+    }
+
+    &:hover {
+      color: $primary-light;
+    }
+
+    &:not(:last-child) {
+      margin: 0 25px 0 0;
+    }
+  }
+}
